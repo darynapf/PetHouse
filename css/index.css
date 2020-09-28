@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
-:root {
+ :root {
     --main-font: 'Montserrat', sans-serif;
     --accent-color: #187073;
     --background-color: #FBFBFB;
     --font-color: #222;
+    --font-color-ondark: #fff;
+    --hover-color: #188A8E;
 }
 
 body {
@@ -117,12 +119,109 @@ body {
     display: none;
 }
 
+.header__main-hello {
+    height: 150px;
+    width: auto;
+    background-color: #FBFBFB;
+    background-image: url('../img/welcome-hello-320.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.main-button {
+    color: var(--font-color-ondark);
+    background-color: var(--accent-color);
+    font-family: var(--main-font);
+    padding: 15px 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+}
+
+.header__button-catalog {
+    margin-top: 10px;
+}
+
+.main-button:hover {
+    background-color: var(--hover-color);
+    cursor: pointer;
+}
+
+.button-arrow {
+    padding-left: 10px;
+}
+
+.header__catalog__desktope {
+    display: none;
+}
+
+.header__catalog__mobile {
+    margin-top: 5px;
+    display: grid;
+    gap: 5px;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: var(--font-color);
+    font-family: var(--main-font);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+}
+
+
+/* .menu-item:hover {
+        background-color: var(--accent-color);
+        cursor: pointer;
+        color: var(--font-color-ondark);
+        fill: var(--font-color);
+    } */
+
+
+/* .menu-item:hover a {
+        color: var(--font-color-ondark);
+        font-weight: 500;
+    } */
+
+.menu-item {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-color);
+    height: 80px;
+    fill: var(--font-color);
+}
+
 @media screen and (min-width:768px) {
     .header__additional {
         padding: 20px 39px;
     }
     .header__navigation__menu {
         padding: 0px 39px;
+    }
+    .header__main-hello {
+        height: 345px;
+        width: auto;
+        background-image: url('../img/welcome-hello-768.svg');
+    }
+    .header__catalog__desktope {
+        display: none;
+    }
+    .header__catalog__mobile {
+        margin-top: 5px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 5px;
+    }
+    .header__catalog__other {
+        grid-column: 1/3;
     }
 }
 
@@ -193,5 +292,51 @@ body {
         font-size: 12px;
         line-height: 18px;
         justify-self: right;
+    }
+    .header_main-hello {
+        height: 258px;
+        width: auto;
+        background-image: url('../img/welcome-hello-1024.svg');
+    }
+    .header__button-catalog {
+        display: none;
+    }
+    .header__catalog__mobile {
+        display: none;
+    }
+    .header__catalog__desktope {
+        margin: 28px 0px;
+        justify-content: space-around;
+        justify-items: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+}
+
+.menu-item img {
+    margin: auto;
+}
+
+.menu-item {
+    display: grid;
+    gap: 10px;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    justify-content: center;
+    grid-row: 3fr 1fr;
+}
+
+.header__catalog__other {
+    grid-column: 7/7;
+}
+
+
+}
+@media screen and (min-width:1440px) {
+    .header__main-hello {
+        height: 309;
+        width: auto;
+        background-image: url('../img/welcome-hello-1440.svg');
     }
 }
