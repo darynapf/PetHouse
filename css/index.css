@@ -2,7 +2,7 @@
  :root {
     --main-font: 'Montserrat', sans-serif;
     --accent-color: #187073;
-    --background-color: #FBFBFB;
+    --background-color: #F5F6FB;
     --font-color: #222;
     --font-color-ondark: #fff;
     --hover-color: #188A8E;
@@ -12,6 +12,7 @@ body {
     min-width: 320px;
     max-width: 1110px;
     margin: auto;
+    font-family: var(--main-font);
 }
 
 .header__navigation {
@@ -196,6 +197,28 @@ body {
     background-color: var(--background-color);
     height: 80px;
     fill: var(--font-color);
+    border-radius: 4px;
+}
+
+.information {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 70px;
+    color: #222;
+}
+
+.information__topic {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 138.5%;
+}
+
+.information__description {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 138.5%;
 }
 
 @media screen and (min-width:768px) {
