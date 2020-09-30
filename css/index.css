@@ -55,7 +55,6 @@ body {
 
 .header__navigation__menu {
     justify-self: right;
-    padding: 0px 10px;
 }
 
 .header__navigation__mobile a {
@@ -68,6 +67,7 @@ body {
     background-color: var(--background-color);
     font-weight: 500;
     font-size: 18px;
+    margin: 0px 10px;
 }
 
 .header__navigation__mobile__pages {
@@ -182,6 +182,7 @@ body {
 
 .header__button-catalog {
     margin-top: 10px;
+    cursor: pointer;
 }
 
 .main-button:active {
@@ -229,7 +230,8 @@ body {
     border-radius: 4px;
 }
 
-.information {
+
+/* .information {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding-top: 70px;
@@ -262,33 +264,34 @@ body {
     width: 300px;
     height: 130px;
     background-color: var(--background-color);
-}
+} */
 
 @media screen and (min-width:768px) {
     .header__additional {
         padding: 20px 10px;
     }
-    .header__navigation__menu {
-        padding: 0px 39px;
-    }
-    .header__main-hello {
-        height: 345px;
-        width: auto;
-        background-image: url('../img/welcome-hello-768.svg');
-    }
-    .header__catalog__desktope {
-        display: none;
-    }
-    .header__catalog__mobile {
-        margin-top: 5px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(4, 1fr);
-        gap: 5px;
-    }
-    .header__catalog__other {
-        grid-column: 1/3;
-    }
+}
+
+.header__main-hello {
+    height: 345px;
+    width: auto;
+    background-image: url('../img/welcome-hello-768.svg');
+}
+
+.header__catalog__desktope {
+    display: none;
+}
+
+.header__catalog__mobile {
+    margin-top: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 5px;
+}
+
+.header__catalog__other {
+    grid-column: 1/3;
 }
 
 @media screen and (min-width:1024px) {
@@ -344,6 +347,12 @@ body {
         line-height: 18px;
         justify-self: left;
     }
+    .header__navigation__pages a:hover {
+        color: var(--accent-color);
+    }
+    .header__navigation__phone a:hover {
+        color: var(--accent-color);
+    }
     .header__navigation__languages {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -357,6 +366,9 @@ body {
         font-size: 12px;
         line-height: 18px;
         justify-self: right;
+    }
+    .header__navigation__languages a:hover {
+        color: var(--accent-color);
     }
     .header_main-hello {
         height: 258px;
@@ -387,6 +399,10 @@ body {
     }
     .header__catalog__other {
         grid-column: 7/7;
+    }
+    .header__navigation__mobile {
+        display: none;
+        ;
     }
 }
 
