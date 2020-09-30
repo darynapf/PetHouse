@@ -16,7 +16,7 @@ body {
 }
 
 .header__navigation {
-    1 display: grid;
+    display: grid;
     grid-template-columns: 90% 10%;
     align-items: center;
     justify-content: center;
@@ -256,15 +256,15 @@ body {
     line-height: 138.5%;
 }
 
-/* .info2, .info3 {
+.info2, .info3 {
     display: none;
 } */
 
-/* .current-offers_proposition {
+.current-offers_proposition {
 width: 300px;
 height: 130px;
 background-color: var(--background-color);
-} */
+}
 
 @media screen and (min-width:768px) {
     .header__additional {
