@@ -21,4 +21,4 @@ buttonHamburger.addEventListener("click", function() {
     } else {
         mobileNavigation.style.display = "none";
     }
-});
+});  
