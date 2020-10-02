@@ -21,4 +21,17 @@ buttonHamburger.addEventListener("click", function() {
     } else {
         mobileNavigation.style.display = "none";
     }
-});  
+});
+
+// Hover menu
+const catsCategory = document.querySelector(".menu-hover-cats");
+const catsMenuItem = document.querySelector(".header__catalog__cats");
+
+catsMenuItem.addEventListener("mouseover", function() {
+    catsCategory.style.display = "block";
+})
+// catsMenuItem.addEventListener("mouseout", function() {
+//     catsCategory.style.display = "none";
+// })
+
+
