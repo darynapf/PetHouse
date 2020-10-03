@@ -25,13 +25,11 @@ buttonHamburger.addEventListener("click", function() {
 
 // Hover menu
 const catsCategory = document.querySelector(".menu-hover-cats");
-const catsMenuItem = document.querySelector(".header__catalog__cats");
+const catsMenuItem = document.querySelector(".catalog-hover");
 
 catsMenuItem.addEventListener("mouseover", function() {
-    catsCategory.style.display = "block";
+    catsCategory.style.display = "grid";
 })
-// catsMenuItem.addEventListener("mouseout", function() {
-//     catsCategory.style.display = "none";
-// })
-
-
+catsMenuItem.addEventListener("mouseout", function() {
+    catsCategory.style.display = "none";
+})
