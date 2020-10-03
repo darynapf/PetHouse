@@ -50,6 +50,14 @@
         align-items: center;
         gap: 10px;
     }
+    .header__additional__cart:hover a {
+        fill: var(--accent-color);
+        color: var(--accent-color);
+    }
+    .header__additional__cart-hover:hover {
+        width: 135px;
+        height: 60px;
+    }
     .header__additional__cart-name {
         display: block;
         font-family: var(--main-font);

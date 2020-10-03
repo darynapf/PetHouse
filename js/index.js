@@ -1,8 +1,8 @@
-new Glide('.glide', {
-    autoplay: 3000,
+new Glide(".glide", {
+    autoplay: 4000,
     type: "carousel",
-    animationDuration: 1500
-}).mount()
+    animationDuration: 3000,
+}).mount();
 
 // mobile button catalog show/hide
 const buttonToCatalog = document.querySelector(".header__button-catalog");
@@ -11,9 +11,20 @@ const mobileCatalog = document.querySelector(".header__catalog__mobile");
 buttonToCatalog.addEventListener("click", function() {
     if (mobileCatalog.style.display === "none") {
         mobileCatalog.style.display = "grid";
-
     } else {
         mobileCatalog.style.display = "none";
+    }
+});
+
+//dropdown for mobile menu
+const subtitleCatalog = document.querySelector(".menu-hover-cats_mobile");
+const catsMobileItem = document.querySelector(".header__catalog__mobile__cats");
+
+catsMobileItem.addEventListener("click", function() {
+    if (subtitleCatalog.style.display === "none") {
+        subtitleCatalog.style.display = "grid";
+    } else {
+        subtitleCatalog.style.display = "none";
     }
 });
 
@@ -35,7 +46,7 @@ const catsMenuItem = document.querySelector(".catalog-hover");
 
 catsMenuItem.addEventListener("mouseover", function() {
     catsCategory.style.display = "grid";
-})
+});
 catsMenuItem.addEventListener("mouseout", function() {
     catsCategory.style.display = "none";
-})
+});
