@@ -1,3 +1,9 @@
+new Glide('.glide', {
+    autoplay: 3000,
+    type: "carousel",
+    animationDuration: 1500
+}).mount()
+
 // mobile button catalog show/hide
 const buttonToCatalog = document.querySelector(".header__button-catalog");
 const mobileCatalog = document.querySelector(".header__catalog__mobile");

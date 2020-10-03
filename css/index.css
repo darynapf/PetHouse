@@ -168,17 +168,30 @@
             grid-template-rows: repeat(8, 1fr);
         }
         
-        .header__main-hello {
-            height: 150px;
-            width: auto;
-            background-color: var(--background-color);
-            background-image: url('../img/welcome-hello-320.svg');
+        .slider-style {
             background-repeat: no-repeat;
             background-position: center;
             display: flex;
             justify-content: center;
             align-items: flex-end;
             padding-bottom: 13px;
+            height: 150px;
+            width: auto;
+        }
+        
+        .header__main-hello {
+            background-color: var(--background-color);
+            background-image: url('../img/welcome-hello-320.svg');
+        }
+        
+        .header__main-shelter {
+            background-color: #FBFBFB;
+            background-image: url('../img/shelter-320.svg');
+        }
+        
+        .header__main-withlove {
+            background-color: var(--accent-color);
+            background-image: url('../img/with-love-320.svg');
         }
         
         .navigation {
@@ -263,7 +276,7 @@
             letter-spacing: 0em;
         }
         
-        .menu-item:hover {
+        .catalog-hover:hover .menu-item {
             fill: var(--background-color);
             cursor: pointer;
             background-color: var(--accent-color);
@@ -345,203 +358,4 @@
             display: flex;
             flex-direction: column;
             gap: 20px;
-        }
-        
-        @media screen and (min-width:768px) {
-            .header__additional {
-                padding: 20px 10px;
-            }
-            .header__main-hello {
-                height: 345px;
-                width: auto;
-                background-image: url('../img/welcome-hello-768.svg');
-            }
-            .header__catalog__desktope {
-                display: none;
-            }
-            .header__catalog__mobile {
-                margin-top: 5px;
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                grid-template-rows: repeat(4, 1fr);
-                gap: 5px;
-            }
-            .header__catalog__other {
-                grid-column: 1/3;
-            }
-        }
-        
-        @media screen and (min-width:1024px) {
-            .content {
-                margin: 0px 0px;
-            }
-            .header__additional {
-                padding-top: 28px;
-            }
-            .header__additional__logo-mini {
-                display: none;
-            }
-            .header__additional__logo {
-                display: block;
-                align-items: center;
-            }
-            a.header__additional__cart-name {
-                text-decoration: none;
-            }
-            .header__additional__cart {
-                display: grid;
-                grid-template-columns: 1fr 2fr;
-                align-items: center;
-                gap: 10px;
-            }
-            .header__additional__cart-name {
-                display: block;
-                font-family: var(--main-font);
-                font-style: normal;
-                font-weight: 500;
-                font-size: 16px;
-                line-height: 20px;
-                text-align: right;
-                color: var(--font-color);
-            }
-            .header__navigation__menu {
-                display: none;
-            }
-            .header__navigation {
-                display: grid;
-                grid-template-columns: 1fr 1fr 1fr;
-                align-items: center;
-                background-color: var(--background-color);
-                height: 30px;
-            }
-            .header__navigation__pages {
-                display: grid;
-                grid-template-columns: 1fr 1fr 1fr;
-                gap: 19px;
-                color: var(--font-color);
-                font-family: var(--main-font);
-                font-style: normal;
-                font-weight: 500;
-                text-decoration: none;
-                font-size: 12px;
-                line-height: 18px;
-                justify-self: left;
-            }
-            .header__navigation__pages a:hover {
-                color: var(--accent-color);
-            }
-            .header__navigation__phone a:hover {
-                color: var(--accent-color);
-            }
-            .header__navigation__languages {
-                display: grid;
-                grid-template-columns: 1fr 1fr 1fr;
-                gap: 19px;
-                text-decoration: none;
-                justify-items: left;
-                color: var(--font-color);
-                font-family: var(--main-font);
-                font-style: normal;
-                font-weight: 500;
-                font-size: 12px;
-                line-height: 18px;
-                justify-self: right;
-            }
-            .header__navigation__languages a:hover {
-                color: var(--accent-color);
-            }
-            .header_main-hello {
-                height: 258px;
-                width: auto;
-                background-image: url('../img/welcome-hello-1024.svg');
-            }
-            .header__button-catalog {
-                display: none;
-            }
-            .header__catalog__mobile {
-                display: none;
-            }
-            .header__catalog__desktope {
-                overflow: auto;
-                margin: 20px 0px;
-                justify-items: stretch;
-                display: grid;
-                gap: 20px;
-                grid-template-columns: repeat(7, 1fr);
-                margin: 20px 0px;
-            }
-            .menu-item {
-                display: grid;
-                gap: 10px;
-                align-items: center;
-                justify-content: center;
-                grid-row: 3fr 1fr;
-                padding: 20px 20px;
-            }
-            .header__catalog__other {
-                grid-column: 7/7;
-            }
-            .header__navigation__mobile {
-                display: none;
-            }
-            /* Menu cats */
-            .menu-hover-cats {
-                display: none;
-                grid-template-columns: 1fr 1fr 1fr 1fr;
-                grid-template-rows: min-content;
-                align-items: flex-start;
-                max-width: 1110px;
-                z-index: 3;
-                border: 2px solid #187073;
-                position: absolute;
-                background-color: var(--font-color-ondark);
-            }
-            .menu-hover-cats li {
-                list-style-type: none;
-            }
-            .menu-group {
-                display: inline-grid;
-                grid-template-rows: auto auto;
-                gap: 10px;
-                align-items: flex-start;
-            }
-            .main-link-menu {
-                text-decoration: none;
-                font-weight: 600;
-                font-size: 20px;
-                color: var(--accent-color);
-            }
-            .main-link-menu:hover {
-                color: var(--hover-color);
-            }
-            .subparagraph-link-menu {
-                text-decoration: none;
-                font-weight: 500;
-                font-size: 14px;
-                line-height: 17px;
-                color: var(--font-color);
-                list-style-type: none;
-            }
-            .subparagraph-link-menu:hover {
-                color: var(--hover-color);
-            }
-        }
-        
-        @media screen and (min-width:1440px) {
-            .header__main-hello {
-                height: 309;
-                width: auto;
-                background-image: url('../img/welcome-hello-1440.svg');
-            }
-            .header__catalog__desktope {
-                justify-content: center;
-            }
-            .menu-item {
-                display: grid;
-                align-items: center;
-                height: 72px;
-                padding: 0px 10px;
-                grid-row: 1fr;
-                grid-template-columns: 1fr 1fr;
-            }
         }
