@@ -251,7 +251,7 @@
         }
         
         .header__catalog__mobile {
-            display: grid;
+            display: none;
             gap: 5px;
             grid-template-rows: repeat(7, 1fr);
             margin: 5px 0px;
@@ -286,6 +286,11 @@
         
         .menu-hover-cats_mobile li {
             list-style-type: none;
+            padding: 0;
+        }
+        
+        .menu-hover-cats_mobile {
+            display: none;
         }
         
         .menu-group_mobile {
@@ -307,6 +312,7 @@
             background-color: var(--background-color);
             font-weight: 500;
             font-size: 16px;
+            height: 40px;
         }
         
         .catalog-hover:hover .menu-item {
