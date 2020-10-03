@@ -11,8 +11,16 @@
         
         body {
             font-family: var(--main-font);
+        }
+        
+        .container {
             max-width: 1110px;
+            margin: 0 10px;
             margin: auto;
+        }
+        
+        .content {
+            margin: 0px 10px;
         }
         
         .header__navigation {
@@ -22,7 +30,6 @@
             justify-content: center;
             background-color: var(--background-color);
             height: 30px;
-            margin: 0px 10px;
         }
         
         .header__navigation__pages {
@@ -64,7 +71,6 @@
             background-color: var(--background-color);
             font-weight: 500;
             font-size: 18px;
-            margin: 0px 10px;
         }
         
         .header__navigation__mobile__pages {
@@ -169,7 +175,6 @@
             background-image: url('../img/welcome-hello-320.svg');
             background-repeat: no-repeat;
             background-position: center;
-            margin: 0px 10px;
             display: flex;
             justify-content: center;
             align-items: flex-end;
@@ -201,7 +206,6 @@
             align-items: center;
             justify-content: center;
             border-radius: 4px;
-            margin: 0px 10px;
         }
         
         .header__button-catalog {
@@ -229,7 +233,7 @@
             display: grid;
             gap: 5px;
             grid-template-rows: repeat(7, 1fr);
-            margin: 5px 10px;
+            margin: 5px 0px;
         }
         
         .header__catalog__mobile a {
@@ -265,19 +269,18 @@
             background-color: var(--accent-color);
             color: var(--font-color-ondark);
         }
-        /* .information {
+        
+        .information {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             padding-top: 70px;
             color: #222;
-            margin: 0px 10px;
         }
         
         .information__topic {
             font-style: normal;
             font-weight: 500;
             font-size: 18px;
-            line-height: 138.5%;
         }
         
         .information__description {
@@ -292,17 +295,56 @@
             font-weight: 500;
             font-size: 24px;
             line-height: 138.5%;
+            margin: 40px 0px 15px 0px;
         }
         
-        .info2,
-        .info3 {
-            display: none;
-        } */
-        
         .current-offers_proposition {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
             width: 300px;
             height: 130px;
             background-color: var(--background-color);
+        }
+        
+        .current-offers_proposition p {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 138.5%;
+        }
+        
+        .current-offers_proposition img {
+            height: 110px;
+            width: auto;
+        }
+        
+        .footer__line {
+            background: var(--active-color);
+            width: 100%;
+            height: 2px;
+            margin: auto;
+            opacity: 0.3;
+            margin: 20px 0;
+        }
+        
+        .footer__topic {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            margin: 0;
+        }
+        
+        .footer__subtitle {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+        }
+        
+        .footer_title {
+            margin-top: 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
         }
         
         @media screen and (min-width:768px) {
@@ -330,6 +372,9 @@
         }
         
         @media screen and (min-width:1024px) {
+            .content {
+                margin: 0px 0px;
+            }
             .header__additional {
                 padding-top: 28px;
             }
@@ -423,7 +468,7 @@
                 display: grid;
                 gap: 20px;
                 grid-template-columns: repeat(7, 1fr);
-                margin: 20px 10px;
+                margin: 20px 0px;
             }
             .menu-item {
                 display: grid;
