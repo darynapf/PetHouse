@@ -1,6 +1,12 @@
 @media screen and (min-width:768px) {
-    .header__additional {
-        padding: 20px 10px;
+    .facebook:hover {
+        fill: #315998;
+    }
+    .twitter:hover {
+        fill: #009EE9;
+    }
+    .instagram:hover {
+        fill: linear-gradient(48.33deg, #FFDD55 6.54%, #FF543E 49.41%, #C837AB 92.29%);
     }
     .slider-style {
         height: 345px;
@@ -160,7 +166,8 @@
     .menu-hover-cats {
         padding: 5px;
         display: none;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 221px 223px 277px 256px;
+        gap: 20px;
         grid-template-rows: min-content;
         align-items: flex-start;
         justify-content: center;
@@ -169,6 +176,7 @@
         border: 2px solid #187073;
         position: absolute;
         background-color: var(--font-color-ondark);
+        padding: 35px 40px;
     }
     .menu-hover-cats li {
         list-style-type: none;
@@ -178,6 +186,8 @@
         grid-template-rows: auto auto;
         gap: 10px;
         align-items: flex-start;
+        margin-left: 0;
+        padding-left: 0;
     }
     .main-link-menu {
         text-decoration: none;
