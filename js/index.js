@@ -4,6 +4,21 @@ new Glide(".glide", {
     animationDuration: 3000,
 }).mount();
 
+new Glide(".glide-2", {
+    autoplay: 4000,
+    type: "carousel",
+    animationDuration: 3000,
+    perView: 3,
+    breakpoints: {
+        320: {
+            perView: 1
+        },
+        768: {
+            perView: 2
+        }
+    }
+}).mount();
+
 // mobile button catalog show/hide
 const buttonToCatalog = document.querySelector(".header__button-catalog");
 const mobileCatalog = document.querySelector(".header__catalog__mobile");
