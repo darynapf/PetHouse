@@ -5,8 +5,7 @@ new Glide(".glide", {
 }).mount();
 
 new Glide(".glide-2", {
-    autoplay: 4000,
-    type: "carousel",
+    type: "slider",
     animationDuration: 3000,
     perView: 3,
     breakpoints: {

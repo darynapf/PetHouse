@@ -40,12 +40,13 @@
         justify-content: center;
         gap: 100px;
     }
-    .copyright {
-        padding-top: 100px;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 180%;
+    .current-offers_proposition {
+        display: grid;
+        grid-template-columns: 695px 390px;
+        gap: 23px;
+    }
+    .mobile-proposition_big {
+        display: block;
     }
 }
 
