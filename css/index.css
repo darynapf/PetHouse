@@ -358,24 +358,19 @@
             margin: 40px 0px 15px 0px;
         }
         
+        .current-offers {
+            padding: 30px 0;
+        }
+        
         .current-offers_proposition {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            width: 300px;
-            height: 130px;
-            background-color: var(--background-color);
+            grid-template-columns: 695px 390px;
+            gap: 23px;
         }
         
-        .current-offers_proposition p {
-            font-style: normal;
-            font-weight: 500;
-            font-size: 16px;
-            line-height: 138.5%;
-        }
-        
-        .current-offers_proposition img {
-            height: 110px;
-            width: auto;
+        .mobile-proposition_small {
+            display: grid;
+            gap: 23px;
         }
         
         .footer__line {
@@ -423,4 +418,11 @@
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             gap: 18px;
+        }
+        
+        .address p {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 180%;
         }
