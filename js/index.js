@@ -1,3 +1,17 @@
+let products = [];
+
+async function LoadData() {
+    products = await (await fetch("products.json")).json();
+}
+
+LoadData().then(() => {
+    products.forEach((v, i) => {
+        if (i < 4) {
+            $('#popularItem').tmpl(v).appendTo('#popularOffers');
+        }
+    });
+});
+
 new Glide(".glide", {
     autoplay: 4000,
     type: "carousel",

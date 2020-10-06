@@ -12,6 +12,16 @@
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="js/glide.js"></script>
+    <script src="js/jquery.tmpl.min.js"></script>
+
+    <script id="popularItem" type="text/x-jquery-tmpl">
+        <div class="popular-offers_position">
+            <input type="hidden" value="${id}" />
+            <img class="product-picture" src="img_goods/${image}" alt="">
+            <a class="product-list" href="#">${description}</a>
+            <p class="product-price">${price}</p>
+        </div>
+    </script>
 </head>
 
 <body class="content">
@@ -371,8 +381,11 @@
                     <a href="#"><img class="mobile-proposition_small_first" src="img/smallfrirst_proposition.png" alt="знижка 25%"></a>
                     <a href="#"><img class="mobile-proposition_small_second" src="img/smallsecond_proposition.png" alt="знижка 15%"></a>
                 </div>
-
             </div>
+        </section>
+        <section class="popular-offers" id="popularOffers">
+            <h2 class="topic">Популярні позиції</h2>
+
         </section>
     </div>
     <footer>
@@ -381,7 +394,7 @@
             <div class="footer_info">
                 <div class="footer__about-us footer_title">
                     <h2 class="footer__topic">Про Нас</h2>
-                    <a class="footer__subtitle">Мета</a>
+                    <a class="footer__subtitle ">Мета</a>
                     <a class="footer__subtitle">Новини</a>
                     <a class="footer__subtitle">Кар’єра</a>
                     <a class="footer__subtitle">Контакти</a>
