@@ -17,9 +17,15 @@
     <script id="popularItem" type="text/x-jquery-tmpl">
         <div class="popular-offers_position">
             <input type="hidden" value="${id}" />
-            <img class="product-picture" src="img_goods/${image}" alt="">
-            <a class="product-list" href="#">${description}</a>
-            <p class="product-price">${price}</p>
+            <div class="product-item"><img class="product-picture" src="img_goods/${image}" alt=""></div>
+            <div class="product-list">
+                <a class="product-list" href="#">${title}</a>
+            </div>
+            <div class="product-price">
+                <p>${price}</p>
+                <p>грн</p>
+            </div>
+
         </div>
     </script>
 </head>
@@ -73,8 +79,7 @@
                         </svg>
                     </a>
                     <a for="cart" class="header__additional__cart-name" href="#">Кошик</a>
-                    </label>
-
+            </label>
         </div>
         <!-- Catalog for desktop from 768px -->
         <nav class="header__catalog__desktope container">
@@ -230,69 +235,6 @@
                          </svg> Коти
                     </div>
                 </a>
-                <nav class="menu-hover-cats_mobile">
-                    <ul class="menu-group_mobile">
-                        <li><a class="main-link-menu_mobile" href="#">Харчування</a></li>
-                        <li><a class="subparagraph-link-menu_mobile" href="#">Сухий корм</a></li>
-                        <li> <a class="subparagraph-link-menu_mobile" href="#">Консерви</a></li>
-                        <li><a class="subparagraph-link-menu_mobile" href="#">Лікувальний корм</a></li>
-                        <li><a class="subparagraph-link-menu_mobile" href="#">Замінники молока</a></li>
-                        <li><a class="subparagraph-link-menu_mobile" href="#">Ласощі</a></li>
-                    </ul>
-                    <ul class="menu-group_mobile">
-                        <li><a class="main-link-menu_mobile" href="#">Корекція поведінки</a></li>
-                        <li><a class="subparagraph-link-menu_mobile" href="#">Відлякувачі</a></li>
-                        <li><a class="subparagraph-link-menu_mobile" href="#">Засоби для приваблення</a></li>
-                        <li><a class="subparagraph-link-menu_mobile" href="#">Заспокійливі засоби</a></li>
-                    </ul>
-                    <ul class="menu-group_mobile">
-                        <li><a class="main-link-menu_mobile" href="#">Здоров’я</a></li>
-                        <li><a class="subparagraph-link-menu_mobile" href="#">Вітаміни та добавки</a></li>
-                        <li><a class="subparagraph-link-menu_mobile" href="#">Засоби від бліх і кліщів</a></li>
-                        <li><a class="subparagraph-link-menu_mobile" href="#">Засоби від глистів</a></li>
-                        <li><a class="subparagraph-link-menu_mobile" href="#">Догляд та гігієна</a></li>
-                        <li><a class="subparagraph-link-menu_mobile" href="#">Засоби для догляду</a></li>
-                        <li><a class="subparagraph-link-menu_mobile" href="#">Туалети, пелюшки, аксесуари</a></li>
-                        <li><a class="subparagraph-link-menu_mobile" href="#">Наповнювачі для туалету</a></li>
-                        <li><a class="subparagraph-link-menu_mobile" href="#">Косметика</a></li>
-                        <li><a class="subparagraph-link-menu_mobile" href="#">Шампуні</a></li>
-                        <li><a class="subparagraph-link-menu_mobile" href="#">Кондиціонери та спреї</a></li>
-                    </ul>
-                    <ul class="menu-group_mobile">
-                        <li><a class="main-link-menu_mobile" href="#">Інструменти для догляду</a></li>
-                        <li><a class="subparagraph-link-menu_mobile" href="#">Фурмінатори</a></li>
-                        <li><a class="subparagraph-link-menu_mobile" href="#">Гребінці та щітки</a></li>
-                        <li><a class="subparagraph-link-menu_mobile" href="#">Ковтунорізи</a></li>
-                        <li><a class="subparagraph-link-menu_mobile" href="#">Кігтерізи</a></li>
-                        <li><a class="subparagraph-link-menu_mobile" href="#">Інструменти для видалення кліщів</a></li>
-                    </ul>
-                    <ul class="menu-group_mobile">
-                        <li><a class="main-link-menu_mobile" href="#">Ігри та розваги</a></li>
-                        <li><a class="subparagraph-link-menu_mobile" href="#">Іграшки</a></li>
-                    </ul>
-                    <ul class="menu-group_mobile">
-                        <li><a class="main-link-menu_mobile" href="#">Чистота в будинку</a></li>
-                        <li><a class="subparagraph-link-menu_mobile" href="#">Переноски, сумки, рюкзаки</a></li>
-                        <li><a class="subparagraph-link-menu_mobile" href="#">Засоби для видалення запаху</a></li>
-                        <li><a class="subparagraph-link-menu_mobile" href="#">Засоби для видалення плям</a></li>
-                        <li><a class="subparagraph-link-menu_mobile" href="#">Інструменти для чистки від шерсті</a></li>
-                    </ul>
-                    <ul class="menu-group_mobile">
-                        <li><a class="main-link-menu_mobile" href="#">Прогулянки і подорожі</a></li>
-                        <li><a class="subparagraph-link-menu_mobile" href="#">Рулетки</a></li>
-                        <li><a class="subparagraph-link-menu_mobile" href="#">Нашийники, повідці, шлеї</a></li>
-                        <li><a class="subparagraph-link-menu_mobile" href="#">Переноски, сумки, рюкзаки</a></li>
-                    </ul>
-                    <ul class="menu-group_mobile">
-                        <li><a class="main-link-menu_mobile" href="#">Домашній затишок</a></li>
-                        <li><a class="subparagraph-link-menu_mobile" href="#">Гамаки</a></li>
-                        <li><a class="subparagraph-link-menu_mobile" href="#">Лежаки</a></li>
-                        <li><a class="subparagraph-link-menu_mobile" href="#">Будиночки і тунелі</a></li>
-                        <li><a class="subparagraph-link-menu_mobile" href="#">Охолоджуючі підстилки</a></li>
-                        <li><a class="subparagraph-link-menu_mobile" href="#">Кігтеточки</a></li>
-                        <li><a class="subparagraph-link-menu_mobile" href="#">Дверцята</a></li>
-                    </ul>
-                </nav>
             </div>
             <a href="#">
                 <div class="header__catalog__mobile__dogs menu-item">
@@ -383,9 +325,9 @@
                 </div>
             </div>
         </section>
-        <section class="popular-offers" id="popularOffers">
+        <section>
             <h2 class="topic">Популярні позиції</h2>
-
+            <div class="popular-offers" id="popularOffers"></div>
         </section>
     </div>
     <footer>
@@ -439,6 +381,75 @@
                 <p>© Pethouse™, 2020. All rights reserved. <br> Company Registration Number: 21479524.</p>
             </div>
     </footer>
+    <div class="menu-modal">
+        <nav class="menu-hover-cats_mobile">
+            <ul class="menu-group_mobile">
+                <li><a class="main-link-menu_mobile" href="#">Харчування</a></li>
+                <li><a class="subparagraph-link-menu_mobile" href="#">Сухий корм</a></li>
+                <li> <a class="subparagraph-link-menu_mobile" href="#">Консерви</a></li>
+                <li><a class="subparagraph-link-menu_mobile" href="#">Лікувальний корм</a></li>
+                <li><a class="subparagraph-link-menu_mobile" href="#">Замінники молока</a></li>
+                <li><a class="subparagraph-link-menu_mobile" href="#">Ласощі</a></li>
+            </ul>
+            <ul class="menu-group_mobile">
+                <li><a class="main-link-menu_mobile" href="#">Корекція поведінки</a></li>
+                <li><a class="subparagraph-link-menu_mobile" href="#">Відлякувачі</a></li>
+                <li><a class="subparagraph-link-menu_mobile" href="#">Засоби для приваблення</a></li>
+                <li><a class="subparagraph-link-menu_mobile" href="#">Заспокійливі засоби</a></li>
+            </ul>
+            <ul class="menu-group_mobile">
+                <li><a class="main-link-menu_mobile" href="#">Здоров’я</a></li>
+                <li><a class="subparagraph-link-menu_mobile" href="#">Вітаміни та добавки</a></li>
+                <li><a class="subparagraph-link-menu_mobile" href="#">Засоби від бліх і кліщів</a></li>
+                <li><a class="subparagraph-link-menu_mobile" href="#">Засоби від глистів</a></li>
+                <li><a class="subparagraph-link-menu_mobile" href="#">Догляд та гігієна</a></li>
+                <li><a class="subparagraph-link-menu_mobile" href="#">Засоби для догляду</a></li>
+                <li><a class="subparagraph-link-menu_mobile" href="#">Туалети, пелюшки, аксесуари</a></li>
+                <li><a class="subparagraph-link-menu_mobile" href="#">Наповнювачі для туалету</a></li>
+                <li><a class="subparagraph-link-menu_mobile" href="#">Косметика</a></li>
+                <li><a class="subparagraph-link-menu_mobile" href="#">Шампуні</a></li>
+                <li><a class="subparagraph-link-menu_mobile" href="#">Кондиціонери та спреї</a></li>
+            </ul>
+            <ul class="menu-group_mobile">
+                <li><a class="main-link-menu_mobile" href="#">Інструменти для догляду</a></li>
+                <li><a class="subparagraph-link-menu_mobile" href="#">Фурмінатори</a></li>
+                <li><a class="subparagraph-link-menu_mobile" href="#">Гребінці та щітки</a></li>
+                <li><a class="subparagraph-link-menu_mobile" href="#">Ковтунорізи</a></li>
+                <li><a class="subparagraph-link-menu_mobile" href="#">Кігтерізи</a></li>
+                <li><a class="subparagraph-link-menu_mobile" href="#">Інструменти для видалення кліщів</a></li>
+            </ul>
+            <ul class="menu-group_mobile">
+                <li><a class="main-link-menu_mobile" href="#">Ігри та розваги</a></li>
+                <li><a class="subparagraph-link-menu_mobile" href="#">Іграшки</a></li>
+            </ul>
+            <ul class="menu-group_mobile">
+                <li><a class="main-link-menu_mobile" href="#">Чистота в будинку</a></li>
+                <li><a class="subparagraph-link-menu_mobile" href="#">Переноски, сумки, рюкзаки</a></li>
+                <li><a class="subparagraph-link-menu_mobile" href="#">Засоби для видалення запаху</a></li>
+                <li><a class="subparagraph-link-menu_mobile" href="#">Засоби для видалення плям</a></li>
+                <li><a class="subparagraph-link-menu_mobile" href="#">Інструменти для чистки від шерсті</a></li>
+            </ul>
+            <ul class="menu-group_mobile">
+                <li><a class="main-link-menu_mobile" href="#">Прогулянки і подорожі</a></li>
+                <li><a class="subparagraph-link-menu_mobile" href="#">Рулетки</a></li>
+                <li><a class="subparagraph-link-menu_mobile" href="#">Нашийники, повідці, шлеї</a></li>
+                <li><a class="subparagraph-link-menu_mobile" href="#">Переноски, сумки, рюкзаки</a></li>
+            </ul>
+            <ul class="menu-group_mobile">
+                <li><a class="main-link-menu_mobile" href="#">Домашній затишок</a></li>
+                <li><a class="subparagraph-link-menu_mobile" href="#">Гамаки</a></li>
+                <li><a class="subparagraph-link-menu_mobile" href="#">Лежаки</a></li>
+                <li><a class="subparagraph-link-menu_mobile" href="#">Будиночки і тунелі</a></li>
+                <li><a class="subparagraph-link-menu_mobile" href="#">Охолоджуючі підстилки</a></li>
+                <li><a class="subparagraph-link-menu_mobile" href="#">Кігтеточки</a></li>
+                <li><a class="subparagraph-link-menu_mobile" href="#">Дверцята</a></li>
+            </ul>
+        </nav>
+        <div id="close-btn" class="button-catalog_close main-button">
+            Закрити
+        </div>
+    </div>
+    <div class="backdrop"></div>
     <script src="js/index.js"></script>
 </body>
 

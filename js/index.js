@@ -27,7 +27,13 @@ new Glide(".glide-2", {
             perView: 1
         },
         768: {
+            perView: 1
+        },
+        1024: {
             perView: 2
+        },
+        1280: {
+            perView: 3
         }
     }
 }).mount();
@@ -44,17 +50,6 @@ buttonToCatalog.addEventListener("click", function() {
     }
 });
 
-//dropdown for mobile menu
-const subtitleCatalog = document.querySelector(".menu-hover-cats_mobile");
-const catsMobileItem = document.querySelector(".header__catalog__mobile__cats");
-
-catsMobileItem.addEventListener("click", function() {
-    if (subtitleCatalog.style.display === "none") {
-        subtitleCatalog.style.display = "grid";
-    } else {
-        subtitleCatalog.style.display = "none";
-    }
-});
 
 // mobile menu (hamburger)
 const buttonHamburger = document.querySelector(".header__navigation__menu");
@@ -77,4 +72,19 @@ catsMenuItem.addEventListener("mouseover", function() {
 });
 catsMenuItem.addEventListener("mouseout", function() {
     catsCategory.style.display = "none";
+});
+
+$('.header__catalog__mobile__cats').click(function() {
+    var backdropHeight = $(document).height();
+    $('.backdrop').css('height', backdropHeight);
+    $('.backdrop').fadeIn(100, function() {
+        $('.menu-modal').fadeIn(200);
+    });
+});
+
+$('#close-btn').click(function() {
+    console.log('tes');
+    $('.menu-modal').fadeOut(200, function() {
+        $('.backdrop').fadeOut(100);
+    });
 });
