@@ -25,6 +25,7 @@ body {
     max-width: 1110px;
     margin: 0 10px;
     margin: auto;
+    overflow: hidden;
 }
 
 .content {
